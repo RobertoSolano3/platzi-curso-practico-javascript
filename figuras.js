@@ -89,3 +89,26 @@ function areaCirculo(radio) {
 // const areaCirculo = (radioCirculo * radioCirculo) * PI
 // console.log("El área del círculo es de: " + areaCirculo + "cm.")
 console.groupEnd();
+
+//Aqui interactuamos con el HTML
+function calcularPerimetroCuadrado(params) {
+    //Obtener valor que escribio el usuario en el input
+    const input = document.getElementById("InputCuadrado");
+    const value = input.value;
+
+    const perimetro = perimetroCuadrado(value);
+
+    //Mostrar visualmente en lugar de consola
+    alert(perimetro);
+}
+
+function calcularAreaCuadrado(params) {
+    //Obtener valor que escribio el usuario en el input
+    const input = document.getElementById("InputCuadrado");
+    const value = input.value;
+
+    const area = areaCuadrado(value);
+
+    //Mostrar visualmente en lugar de consola
+    alert(area);
+}
