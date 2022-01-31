@@ -112,3 +112,20 @@ function calcularAreaCuadrado(params) {
     //Mostrar visualmente en lugar de consola
     alert(area);
 }
+
+function alturaTrianguloIsoceles(lado,base) {
+    return Math.sqrt((lado*lado)-((base*base)/4))
+}
+
+
+function calcularAlturaTrianguloIsosceles(params) {
+    const input = document.getElementById("InputTrianguloLado");
+    const value = input.value;
+    const input1 = document.getElementById("InputTrianguloBase");
+    const value1 = input1.value;
+
+    const altura = alturaTrianguloIsoceles(value,value1)
+
+    alert(altura);
+
+}
